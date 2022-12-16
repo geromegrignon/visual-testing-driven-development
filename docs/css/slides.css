@@ -1,3 +1,43 @@
-
+.reveal .slides section .awesome-css {
+  display: block;
+  border: 0.3rem solid black;
+  font-size: 8rem;
+  animation-name: awesome-animation;
+  animation-duration: 3s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+}
+.reveal .slides section .opacity {
+  animation: none;
+  opacity: 0.2;
+}
+.reveal .slides section .full-color {
+  animation: none;
+  background: blue;
+  color: red;
+}
+.reveal .slides section .sas-images-container {
+  gap: 10rem;
+}
+.reveal .slides section .sas-images {
+  width: 70%;
+}
+@keyframes awesome-animation {
+  0% {
+    width: 50px;
+    margin: 50px;
+    padding: -100px;
+  }
+  50% {
+    width: 300px;
+    margin: -30px;
+    padding: 100px;
+  }
+  100% {
+    width: 50px;
+    margin: 50px;
+    padding: -100px;
+  }
+}
 
 /*# sourceMappingURL=slides.css.map */
