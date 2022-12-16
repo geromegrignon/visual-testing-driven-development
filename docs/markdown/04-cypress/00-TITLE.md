@@ -4,7 +4,9 @@
 
 ##==##
 
-## Kezako
+<div class="full-center sas-images-container">
+  <img src="assets/images/cypress.png">
+</div>
 
 <aside class="notes">
 Cypress est un framework de test end-to-end (E2E) qui permet de tester l'application dans son ensemble.
@@ -30,13 +32,10 @@ des prérequis
 <!-- .slide: class="with-code" -->
 
 ```js
-it('clicking + fires a change event with the incremented value', () => {
-  const onChangeSpy = cy.spy().as('onChangeSpy');
-  cy.mount(<Stepper initial={100} onChange={onChangeSpy}/>);
-
-  cy.get('[data-cy=counter]').should('have.text', '100');
-  cy.get('[data-cy=increment]').click();
-  cy.get('@onChangeSpy').should('have.been.calledWith', 1);
+it('should work as expected', () => {
+  cy.mount(<Stepper/>);
+  cy.get('#increase').click();
+  cy.get('#increase').click();
 });
 
 ```

@@ -5,11 +5,11 @@
 </div>
 
 <aside class="notes">
-Pourquoi tester visuellement nos applications,
-tout d'abord car le comportement visuel de nos applications est régie par des règles qui n'en simplifie pas les tests.
+Ce comportemnt peut différer:
+- en fonction du navigateur
+- en fonction du dimensionnement de l'écran, depuis les wide screen jusqu'aux devices mobiles
+- en fonction du comportement de tierces parties comme une API: que cela soit par le comportement pendant l'établissement d'une communication que via l'intégration des données dynmiques aux dimensions variables dans nos interfaces.
 
-D'un côté car le comportement visuel dépend non seuement de l'organisation des éléments sur une page mais égalment du
-dimensionement de notre écran et des données dynamiques que l'on souhaite y injecter.
 </aside>
 
 ##==##
@@ -19,7 +19,7 @@ dimensionement de notre écran et des données dynamiques que l'on souhaite y in
 </div>
 
 <aside class="notes">
-Ensuite parce que nos yeux sont faillibles, ou plutôt notre perception.
+Les tests visuels doivent également prendre en compte les différences de perception du rendu des interfaces, en explorant tout type de problématique.
 </aside>
 
 ##==##
@@ -29,7 +29,14 @@ Ensuite parce que nos yeux sont faillibles, ou plutôt notre perception.
 </div>
 
 <aside class="notes">
-QUe cela soit de par 
+...
+</aside>
+
+##==##
+
+<aside class="notes">
+Cette perception n'est pas toujours visuelle et peut être auditive pour des problématiques d'accessibilité.
+Le comportement de l'application et l'adéquation de son rendu ne suffisent donc pas à eux seuls pour s'assurer d'adresser l'application à tout utilisateur final.
 </aside>
 
 ##==##
@@ -45,39 +52,10 @@ QUe cela soit de par
 </div>
 
 <aside class="notes">
-Ou parce que notre perception n'est plus visuelle mais auditive.
-Via des screens readers ou des outils de synthèse vocale.
-</aside>
-
-<aside class="notes">
-Et que donc le comportmeent de nos applications et leur apparence visuelle ne sauirent ganrtir l'accessibilité de leurs contenus.
 Ainsi rappelons en 2022 qu'une div n'est pas un bouton.
+Et donc que si le clic sur cette div ou son rendu feront illusion, ils ne sauraient être retranscrits correcrtement.
 </aside>
 
-##==##
-
-```
-if (list.length) {
-  // display list
-}
-
-```
-
-##==##
-
-```
-if (!list.length) {
-  // display list
-}
-
-```
-
-En partant de ce cas, il suffirait d'inverser la condition pour modifier le comportement visuel de l'application.
-
-
-<aside class="notes">
-Et si je viens imbriquer ceci dans un ensemble de conditions fonctionelles propres à mon projet, la capacité à identifier cette anomalie et à la reproduire prend de la complexité, pouvant aller jusqu'à le rendre invisible jusqu'au client final
-</aside>
 
 ##==##
 
@@ -88,9 +66,8 @@ Et si je viens imbriquer ceci dans un ensemble de conditions fonctionelles propr
 
 
 <aside class="notes">
-Existing solution => Visual regression
-Quand on évoque le visual testing, des solutions comme percy ou applitools.
-Ces solutions de Saas se sont spécialisées dans le visual testing.
+Il existe déjà aujourd'hui des solutions qui ont fait du visual testing leur spécialité, comme Percy et Applitools.
+Avec le soutien de technologies de pixel perfect ou d'IA, ces solutions analysent le rendu des applications pour les évaluer.
 </aside>
 
 ##==##
@@ -99,7 +76,9 @@ Ces solutions de Saas se sont spécialisées dans le visual testing.
 - Visual regressions
 
 <aside class="notes">
-Bien que fortement intéressant pour assurer la maintenabilité de nos projets, ces solutions arrivent tardivement pendant les phases de développement.
+Portés par leur propre argumentaire, l'objectif de ces outils est cependant d'évaluer les changements et les regressions.
+Ils présupposent donc l'existence d'un modèle de référence, un golden master.
+C'est cette référence qui sert de source de vérité en attente d'une revue des changements qui viendraient le remplacer par une nouvelle version.
 </aside>
 
 ##==##

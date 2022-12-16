@@ -4,6 +4,10 @@
 
 ##==##
 
+<img src="assets/images/storybook.jpeg">
+
+##==##
+
 <!-- .slide: class="two-column" -->
 
 <aside class="notes">

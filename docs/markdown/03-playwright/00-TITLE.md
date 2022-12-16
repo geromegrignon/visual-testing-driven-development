@@ -4,48 +4,59 @@
 
 ##==##
 
-# Kezako
-
-##==##
-
-Outil d'automatisation des navigateurs web
+<div class="full-center sas-images-container">
+  <img src="assets/images/playwright.png" width='50%' height='50%'>
+</div>
 
 <aside class="notes">
+Playwright est un outil d'automatisation des navigateurs qui prend sa puissance de l'usage des devtools des navigateurs pour les exploiter.
 L'enjeu est de profiter du contexte de test de navigateur pour à la fois utiliser une API dédiée et utiliser les capacités des devtools côté network.
+Pour ceux qui connaissent PlayWright son positionnement dans des tests visuels peut sembler incongru ici.
+Cependant grâce à 
 </aside>
+
+##==##
 
 # Code
 
 <!-- .slide: class="with-code" -->
-
 ```js
-test('event should work', async ({ mount }) => {
-  let clicked = false;
-  // Mount a component. Returns locator pointing to the component.
-  const component = await mount(<Button title="Submit"
-                                        onClick={() => clicked = true}>
-  </Button>);
+test('should work as expected', async ({ mount }) => {
+  const component = await mount(<App />);
 
-  await expect(component).toContainText('Submit');
-  await component.click();
-  expect(clicked).toBeTruthy();
+  await component.click('#increase');
+  await component.click('#increase');
 });
 
 ```
-
 <!-- .element: class="big-code" -->
 
 ##==##
 
+<div class='full-center'>
+<img src="assets/images/jest-preview-2.png">
+</div>
 
+##==##
+
+<div class='full-center'>
+  <img src="assets/images/playwright-angular.png">
+</div>
+
+##==##
+
+<div class='full-center'>
+  <img src="assets/images/playwright-younes.png">
+</div>
+
+##==##
 
 <!-- .slide: class="two-column" -->
 
-# Pros
+# Avantages
 
-- automated testing
-- **might** not require additional work
-- capacité à tester en parallèle et sur plusieurs navigateurs et permet de s'assurer de la robustesse en fonction des implémentations d'ECMAScript
+- solution de tests automatisés
+- capacité à tester en parallèle sur plusieurs navigateurs
 
 ##--##
 
@@ -61,7 +72,7 @@ test('event should work', async ({ mount }) => {
 
 ##--##
 
-# Cons
+# Limites
 
 - pas de mode **watch**
 
