@@ -17,7 +17,7 @@ Cependant grâce à
 
 ##==##
 
-# Code
+# Test suite
 
 <!-- .slide: class="with-code" -->
 ```js

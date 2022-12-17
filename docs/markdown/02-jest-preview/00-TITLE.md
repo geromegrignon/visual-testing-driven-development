@@ -22,7 +22,7 @@ Jest Preview et son sibling Vitest Preview sont des outils du même auteur qui v
 
 ##==##
 
-# Jest Preview
+# Test suite
 
 <!-- .slide: class="with-code" -->
 
@@ -47,6 +47,8 @@ it('should work as expected', () => {
 </div>
 
 ##==##
+
+# Test suite
 
 <!-- .slide: class="with-code" -->
 
@@ -80,8 +82,7 @@ Cependant Si cette preview est regénéré grâce au hot reloading des test runn
 
 # Avantages
 
-- automated testing
-- **might** not require additional work
+- intégration aux tests automatisés
 
 ##--##
 
@@ -95,7 +96,7 @@ Cependant Si cette preview est regénéré grâce au hot reloading des test runn
 
 # Limites
 
-- not stable version yet (v0.3.0)
+- pas de version stable (v0.3.0)
 - chaque test visuel est manuel
 - cela demande de tester unitairement les composants
 - image statique du dom

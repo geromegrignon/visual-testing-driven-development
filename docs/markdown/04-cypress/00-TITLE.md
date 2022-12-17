@@ -5,7 +5,7 @@
 ##==##
 
 <div class="full-center sas-images-container">
-  <img src="assets/images/cypress.png">
+  <img src="assets/images/cypress.png" style='zoom: 4'>
 </div>
 
 <aside class="notes">
@@ -21,32 +21,21 @@ Cypress est un framework de test end-to-end (E2E) qui permet de tester l'applica
 <aside class="notes">
 Ce qui est déterminent dans le choix de CYpress est vraiment son approche de l'expérience développeur et particulièrement dans l'enjeu actuel de Visual Testing.
 L'interface de Cypress permet d'avoir le contrôle sur les tests que l'on souhaite lancer, sur le navigateur cible et facilite le dbugging via un système de snapshot automatisé.
-</aside>
 
-##==##
-
-# Configuration
-
-<div class="full-center">
-<img style="zoom: 2.3" src="assets/images/cypress-configuration.png">
-</div>
-
-
-<aside class="notes">
 Grâce à des évolutions côté DX, Cypress se distingue des concurrents en analyzant le projet cible pour s'assurer de la complétion
 des prérequis
 </aside>
 ##==##
 
-# Code
+# Test suite
 
 <!-- .slide: class="with-code" -->
 
 ```js
 it('should work as expected', () => {
-  cy.mount(<Stepper/>);
-  cy.get('#increase').click();
-  cy.get('#increase').click();
+  cy.mount(<App/>);
+  cy.get('[data-testid="increase"]').click();
+  cy.get('[data-testid="increase"]').click();
 });
 
 ```
@@ -55,12 +44,19 @@ it('should work as expected', () => {
 
 ##==##
 
+<div class='full-center'>
+<img src="assets/images/cypress-runner.png" style='zoom: 2'>
+</div>
+
+##==##
+
 <!-- .slide: class="two-column" -->
 
-# Pros
+# Avantages
 
-- automated testing
-- **might** not require additional work
+- solution de tests automatisés
+- exploration aisée des composants
+
 
 ##--##
 
@@ -72,9 +68,8 @@ it('should work as expected', () => {
 
 ##--##
 
-# Cons
+# Inconvénients
 
-- heavy configuration
-- not stable version yet (v0.3.0)
+- outil pour les développeurs
 
 

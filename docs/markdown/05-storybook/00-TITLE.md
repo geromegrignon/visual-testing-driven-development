@@ -8,25 +8,24 @@
 <img src="assets/images/storybook.jpeg">
 </div>
 
+<aside class="notes">
+Storybook est une solution qui permet de développer nos composants en isolation, de les documenter, de les tester et de les partager
+</aside>
+
 ##==##
 
-<iframe src="https://react.carbondesignsystem.com/?path=/story/getting-started-welcome--welcome" width="100%"
+<iframe src="https://react.carbondesignsystem.com/?path=/story/components-formgroup--playground" width="100%"
 height="100%"></iframe>
 
 ##==##
 
-# Marche sur ma machine
+<!-- .slide: class="two-column" -->
 
-// TODO image cela marche sur ma machine
+# Avantages
 
-<aside class="notes">
-Et si on on pouvait rendre ces contextes visuels accessibles à l'extérieur.
-</aside>
-
-# Pros
-
-- automated testing
-- **might** not require additional work
+- tests d'état
+- documentation / design system
+- application statique
 
 ##--##
 
@@ -38,9 +37,9 @@ Et si on on pouvait rendre ces contextes visuels accessibles à l'extérieur.
 
 ##--##
 
-# Cons
+# Inconvénients
 
-- heavy configuration
-- not stable version yet (v0.3.0)
+- coût de maintenance
+- tests manuels par défaut
 
 

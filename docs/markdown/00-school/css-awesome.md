@@ -72,8 +72,6 @@ Avec le soutien de technologies de pixel perfect ou d'IA, ces solutions analysen
 
 <aside class="notes">
 Portés par leur propre argumentaire, l'objectif de ces outils est cependant d'évaluer les changements et les regressions.
-Ils présupposent donc l'existence d'un modèle de référence, un golden master.
-C'est cette référence qui sert de source de vérité en attente d'une revue des changements qui viendraient le remplacer par une nouvelle version.
 </aside>
 
 ##==##
@@ -85,7 +83,8 @@ C'est cette référence qui sert de source de vérité en attente d'une revue de
 </div>
 
 <aside class="notes">
-Tout d'abord de par leur nature, elles présupposent l'existence d'un golden master, d'une référence sur laquelle s'appuyer.
+Ils présupposent donc l'existence d'un modèle de référence, un golden master.
+C'est cette référence qui sert de source de vérité en attente d'une revue des changements qui viendraient le remplacer par une nouvelle version.
 </aside>
 
 
@@ -123,7 +122,7 @@ On intègre donc comme biais que le parcours utilisateur permet d'accéder aux d
 - facilité d'accès
 - capacité à reproduire
 - tâches ordonnées
-- envrionnement dev opérant
+- environnement dev opérant
 
 ##--##
 
@@ -147,48 +146,29 @@ Cela présuppose la capacité à rejouer un même jeu de données:
 
 ##==##
 
+<!-- .slide: class="transition bg-pink" -->
+
 # Constat
 
 <aside class="notes">
-L'objectif est d'isoler notre besoin de son contexte
-Quand les développement sont isolés, le parcours utilisateur n'est pas toujours accessible.
+L'objectif est d'isoler notre besoin de son contexte: soit un élement isolé de notre développement en cours.
 Nous avons donc besoin de solutions qui permettent d'isoler nos éléments visuels pour avoir un feedback en temps réel sans la complexité du contexte de l'application et de toutes ses contraintes.
 </aside>
 
 ##==##
 
 <div class="full-center">
-<img src="assets/images/hype-cycle.png" />
+<img src="assets/images/component.png" style='zoom: 2'>
 </div>
-
-<aside class="notes">
-Hype Cycle
-</aside>
-
-##==##
 
 <aside class="notes">
 Il existe déjà un contexte dans nos applications qui permet de faire fonctionner nos composants en isolation.
 Un petit nid douillet, des fois maltraité, voir ignoré: nos tests.
 Ainsi queqlue soit la solution utilisée, Jest, Jasmine..., ces librairies nous permettent de générer des composants en isolation pour en tester le comportement.
-</aside>
 
-##==##
 
-<aside class="notes">
 Techniquement cela signifie que nous avons à disposition un composant avec un state.
 Et si nous pouvions avoir un rendu visuel de ce composant en temps réel et en mode watch.
 </aside>
 
-# Component testing
-
-La solution est de prendre la situation dans l'autre sens:
-
-- Isoler le composant en générant son rendu dans un état particulier
-- utiliser une API plus spécialisée dans les intéractions avec le DOM
-
-# Intérêt
-
-- cross platform => caniuse
-- tests dédiés
 
