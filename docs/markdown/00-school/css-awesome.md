@@ -41,14 +41,7 @@ Le comportement de l'application et l'adéquation de son rendu ne suffisent donc
 
 ##==##
 <div class="full-center">
-<!-- .slide: class="with-code" -->
-
-```html
-
-<div id='button'></div>
-```
-
-<!-- .element: class="big-code" -->
+click
 </div>
 
 <aside class="notes">
@@ -72,8 +65,10 @@ Avec le soutien de technologies de pixel perfect ou d'IA, ces solutions analysen
 
 ##==##
 
-- Visual changes
-- Visual regressions
+<div class="full-center sas-images-container">
+<h2><strong>Changements</strong> <i>visuels</i></h2>
+<h2><strong>Regressions</strong> <i>visuelles</i></h2>
+</div>
 
 <aside class="notes">
 Portés par leur propre argumentaire, l'objectif de ces outils est cependant d'évaluer les changements et les regressions.
@@ -85,6 +80,10 @@ C'est cette référence qui sert de source de vérité en attente d'une revue de
 
 # Golden master
 
+<div class="full-center">
+<img src="assets/images/old-new.png" style='zoom: 3'>
+</div>
+
 <aside class="notes">
 Tout d'abord de par leur nature, elles présupposent l'existence d'un golden master, d'une référence sur laquelle s'appuyer.
 </aside>
@@ -92,7 +91,9 @@ Tout d'abord de par leur nature, elles présupposent l'existence d'un golden mas
 
 ##==##
 
-# Feedback loop
+<div class="full-center">
+<img src="assets/images/feedback-loop.png" style='zoom: 3'>
+</div>
 
 <aside class="notes">
 De plus ayant pour objectif de valider et de sécuriser l'impact de nos développements,
@@ -103,7 +104,9 @@ Or le feedback loop est un élément clé de la qualité de nos développements.
 
 ##==##
 
-# Situations
+<!-- .slide: class="transition bg-pink" -->
+
+# Driven Development
 
 <aside class="notes">
 L'usage du navigateur pour les tests visuels en phase de développemnt tombe sous le sens.
@@ -113,43 +116,34 @@ On intègre donc comme biais que le parcours utilisateur permet d'accéder aux d
 
 ##==##
 
-# Facilité d'accès
+<!-- .slide: class="two-column" -->
+
+# Prerequis
+
+- facilité d'accès
+- capacité à reproduire
+- tâches ordonnées
+- envrionnement dev opérant
+
+##--##
+
+<!-- .slide: data-background="./web_modules/sfeir-school-theme/images/bg-blue-1.png" -->
+
 
 <aside class="notes">
 Présuppose:
 - une connection
 - un état particulier
 - le début d'un parcours utilisateur
-</aside>
 
-
-##==##
-
-# Reproducitiblité
-
-<aside class="notes">
 Cela présuppose la capacité à rejouer un même jeu de données:
 - pouvoir regénérer un jeu de données supprimé
 - intervention d'un tiers (email/gestionnaire)
+
+  Cela présuppose que le développement d'un parcours utilisateur est réalisé dans l'ordre et non fractionné entre différentes équipes
+
 </aside>
 
-##==##
-
-# développement séquentiel
-
-<aside class="notes">
-Cela présuppose que le développement d'un parcours utilisateur est réalisé dans l'ordre et non fractionné entre différentes équipes
-</aside>
-
-##==##
-
-# Contexte technique
-
-<aside class="notes">
-L'état de notre application dépend d'éléments extérieurs sur lequel notre contrôle est limité, en particulier l'état du network
-Comment reproduire des erreurs réseau?
-Comment reproduire les conditions de chargement de données et les différents états?
-</aside>
 
 ##==##
 

@@ -4,25 +4,18 @@
 
 ##==##
 
+<div class="full-center">
 <img src="assets/images/storybook.jpeg">
+</div>
 
 ##==##
 
-<!-- .slide: class="two-column" -->
-
-<aside class="notes">
-Les solutions présentées précédemment permettent surtout de tester le rendu visuel 'in the moment'.
-Cette prévisualisation ne vit que de manière éphémère et ..
-</aside>
-
-##==##
-
-<iframe src="https://geromegrignon.github.io/angular-material-storybook/?path=/story/introduction--page" width="100%"
+<iframe src="https://react.carbondesignsystem.com/?path=/story/getting-started-welcome--welcome" width="100%"
 height="100%"></iframe>
 
 ##==##
 
-# Marche sur ma machine 
+# Marche sur ma machine
 
 // TODO image cela marche sur ma machine
 

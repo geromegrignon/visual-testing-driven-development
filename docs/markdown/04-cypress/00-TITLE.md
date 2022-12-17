@@ -14,6 +14,17 @@ Cypress est un framework de test end-to-end (E2E) qui permet de tester l'applica
 
 ##==##
 
+<div class='full-center'>
+  <img src="assets/images/cypress-ui.png">
+</div>
+
+<aside class="notes">
+Ce qui est déterminent dans le choix de CYpress est vraiment son approche de l'expérience développeur et particulièrement dans l'enjeu actuel de Visual Testing.
+L'interface de Cypress permet d'avoir le contrôle sur les tests que l'on souhaite lancer, sur le navigateur cible et facilite le dbugging via un système de snapshot automatisé.
+</aside>
+
+##==##
+
 # Configuration
 
 <div class="full-center">

@@ -4,31 +4,109 @@
 
 ##==##
 
-<!-- .slide: class="two-column" -->
+<div class="full-center">
+<img src="assets/images/previewjs.svg" />
+</div>
 
 <aside class="notes">
-Les solutions présentées précédemment permettent surtout de tester le rendu visuel 'in the moment'.
-Cette prévisualisation ne vit que de manière éphémère et ..
+PreviewJS est notre dernière solution du jour.
+Après une première itération sous la forme de React Preview, son créateur a profité de la puissance mise à disposition par Vite et ESbuild pour créer une solution plus globale.
+Cela lui permet de ne pas cibler que React, mais Vue, Svelte et SolidJS également.
 </aside>
 
 ##==##
 
-# Marche sur ma machine 
+<div class="full-center">
 
-// TODO image cela marche sur ma machine
+<!-- .slide: class="with-code" -->
+```js
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        // ...
+      </header>
+    </div>
+  );
+}
+```
+<!-- .element: class="big-code" -->
 
-<aside class="notes">
-Et si on on pouvait rendre ces contextes visuels accessibles à l'extérieur.
+</div>
+
+##==##
+
+<div class='full-center'>
+<img src="assets/images/previewjs-0.png" style='zoom: 3'/>
+</div>
+
+##==##
+
+<div class='full-center'>
+<img src="assets/images/previewjs-1.png" style='zoom: 3'/>
+</div>
+
+##==##
+
+<div class="full-center">
+
+<!-- .slide: class="with-code" -->
+```js
+function App({title}: {title: string}) {
+  return (
+    <div className="App">
+      <header className="App-header">
+        // ...
+      </header>
+    </div>
+  );
+}
+```
+<!-- .element: class="big-code" -->
+
+</div>
+
+##==##
+
+<div class='full-center'>
+<img src="assets/images/previewjs-2.png" style='zoom: 3'/>
+</div>
+
+<aside class='notes'>
+PreviewJS, c'est d'abord un plguin pour VSCode et les IDE Jetbrains
 </aside>
 
-# Pros
+##==##
 
-- extension VSCode
-- live props update
+<div class='full-center'>
+<img src="assets/images/previewjs-cli.png" style='zoom: 2.3'>
+</div>
+
+<aside class='notes'>
+PreviewJS c'est maintenant aussi une CLI.
+Elle permet d'aller plus loin dans la démarche du créateur, celle de proposer une version light de Storybook.
+</aside>
+
+##==##
+
+
+<!-- .slide: class="two-column" -->
+
+# Avantages
+
+- facilité d'utilisation
+- facilité d'intégration (extension)
+- CLI
+- changement en live des props
+
 
 ##--##
 
 <!-- .slide: data-background="./web_modules/sfeir-school-theme/images/bg-blue-1.png" -->
+
+<aside class="notes">
+Et si on on pouvait rendre ces contextes visuels accessibles à l'extérieur.
+</aside>
 
 ##==##
 
@@ -36,10 +114,15 @@ Et si on on pouvait rendre ces contextes visuels accessibles à l'extérieur.
 
 ##--##
 
-# Cons
+# Inconvéniens
 
-- pure manual testing
+- tests manuels
 
+##==##
+
+<div class="full-center">
+<img src="assets/images/hype-cycle.png" />
+</div>
 
 ##==##
 
